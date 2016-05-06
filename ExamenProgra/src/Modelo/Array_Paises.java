@@ -9,13 +9,6 @@ package Modelo;
  *
  * @author Jose Montero
  */
-public class ExamenProgra {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class Array_Paises {
     
 }
