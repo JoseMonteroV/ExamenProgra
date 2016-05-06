@@ -11,12 +11,12 @@ import java.util.ArrayList;
  *
  * @author Jose Montero
  */
-public class Array_Paises {
-    private ArrayList <Pais> arrayPais;
+public class Array_Persona {
+    private ArrayList <Persona> arrayPersona;
     int pos;
 
-    public Array_Paises() {
-        arrayPais = new ArrayList<>();
+    public Array_Persona() {
+        arrayPersona = new ArrayList<>();
     }
     
     public int getPos() {
@@ -27,19 +27,19 @@ public class Array_Paises {
         this.pos = pos;
     }
     
-    public Pais getInfo(){
-         return arrayPais.get(getPos());
+    public Persona getInfo(){
+         return arrayPersona.get(getPos());
      }
     
-    public void agregarCurso(Pais pais){
-        arrayPais.add(pais);
+    public void agregarCurso(Persona persona){
+        arrayPersona.add(persona);
     }// agrega un curso
     
-     public boolean buscarCursoPorSigla(String nombre){
+     public boolean buscarCursoPorSigla(String identificacion){
        boolean buscar=false;
-        for(int i=0; i<arrayPais.size(); i++ )
-            if(arrayPais!=null){
-                if(arrayPais.get(i).getNombre().equalsIgnoreCase(nombre))
+        for(int i=0; i<arrayPersona.size(); i++ )
+            if(arrayPersona!=null){
+                if(arrayPersona.get(i).getId().equalsIgnoreCase(identificacion))
                 {
                     buscar=true;
                     setPos(i);
