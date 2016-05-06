@@ -10,9 +10,10 @@ package Modelo;
  * @author Jose Montero
  */
 public class Persona {
-    
+    @Anotacion
     String id, lugarProcedencia;
-
+    @Anotacion(guardar_xml = false)
+    private static String[] etiquetas = {"Id", "Lugar de Procedencia"};
     
 //    public Persona(){
 //    

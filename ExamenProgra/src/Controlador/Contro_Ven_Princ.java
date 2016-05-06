@@ -35,10 +35,13 @@ public class Contro_Ven_Princ implements ActionListener {
     int opcion = 0;
     public Contro_Ven_Princ(Ventana_Princ ventanaPrincipal, Array_Paises listaPaises, Array_Persona listaPersona){
         this.ventanaPrincipal = ventanaPrincipal;
+
         this.listaPaises = listaPaises;
         this.listaPersona = listaPersona;
     
+
     }
+    
     @Override
     public void actionPerformed(ActionEvent e) {
        if(e.getActionCommand().equals("Agregar")){

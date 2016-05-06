@@ -4,17 +4,20 @@
  * and open the template in the editor.
  */
 package Vista;
-
 import Controlador.Contro_Ven_Princ;
+import Controlador.CreadorArchivo;
+import java.util.ArrayList;
+import Modelo.Anotacion;
 import Modelo.Array_Paises;
 import Modelo.Array_Persona;
+import Modelo.Persona;
+import Modelo.Pais;
 
 /**
  *
  * @author Jose Montero
  */
 public class Ventana_Princ extends javax.swing.JFrame {
-
     /**
      * Creates new form Ventana_Princ
      */
@@ -32,8 +35,6 @@ public class Ventana_Princ extends javax.swing.JFrame {
         grupo_botones.add(rbIndigena);
         grupo_botones.add(rbMigrante);
         grupo_botones.add(rbRefugiado);
-        
-        
     }
 
     /**

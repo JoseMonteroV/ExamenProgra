@@ -10,8 +10,12 @@ package Modelo;
  * @author Jose Montero
  */
 public class Pais {
+    @Anotacion
     int capacidadPersonas, solicitudesRefugio;
+    @Anotacion
     String nombre;
+     @Anotacion(guardar_xml = false)
+    private static String[] etiquetas = {"Capacidad de Personas", "Solicitudes de Refugio", "Nombre"};
 
     public int getCapacidadPersonas() {
         return capacidadPersonas;
