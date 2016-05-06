@@ -10,10 +10,11 @@ package Modelo;
  * @author User
  */
 public class Ciudadano extends Persona {
-    
+    //int diasPermanencia = 30;
     
     public Ciudadano(String id, String lugarProcedencia){  
     super(id, lugarProcedencia);
+    //diasPermanencia = 30;
     
     }//Fin
 }

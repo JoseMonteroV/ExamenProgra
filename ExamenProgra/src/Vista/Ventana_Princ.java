@@ -23,7 +23,8 @@ public class Ventana_Princ extends javax.swing.JFrame {
      */
     Contro_Ven_Princ cvp;
     Array_Paises listaPaises;
-     Array_Persona listaPersona;
+    Array_Persona listaPersona;
+    int opcion;
      
      
     public Ventana_Princ() {
@@ -237,8 +238,23 @@ public class Ventana_Princ extends javax.swing.JFrame {
          return this.txt_id.getText();
        }
     
-    
-    
+    //GET Radio Button
+    public int getRadioButton(){
+        
+        if(rbCiudadano.isSelected()){
+            opcion = 1;
+        }
+        if(rbIndigena.isSelected()){
+            opcion = 2;
+        }
+        if(rbMigrante.isSelected()){
+            opcion = 3;
+        }
+            if(rbRefugiado.isSelected()){
+                opcion = 4;
+            } 
+        return opcion;
+    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup grupo_botones;

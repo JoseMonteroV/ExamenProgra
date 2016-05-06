@@ -32,7 +32,7 @@ public class Contro_Ven_Princ implements ActionListener {
     Pais pais;
     Array_Paises listaPaises;
     Array_Persona listaPersona;
-    int opcion = 0;
+   
     public Contro_Ven_Princ(Ventana_Princ ventanaPrincipal, Array_Paises listaPaises, Array_Persona listaPersona){
         this.ventanaPrincipal = ventanaPrincipal;
 
@@ -46,15 +46,21 @@ public class Contro_Ven_Princ implements ActionListener {
     public void actionPerformed(ActionEvent e) {
        if(e.getActionCommand().equals("Agregar")){
        
-             ciudadano = new Ciudadano(ventanaPrincipal.getTextId(), ventanaPrincipal.getTextLugar());
+             switch(ventanaPrincipal.getRadioButton()){
              
-//           int opcion = 0;
-//             switch(opcion){
-//             
-//                 case 1:
-//                         break;
-//             
-//             }
+                 case 1:
+                      ciudadano = new Ciudadano(ventanaPrincipal.getTextId(), ventanaPrincipal.getTextLugar());
+                         break;
+                 case 2:
+                      indigenas = new Indigenas(ventanaPrincipal.getTextId(),ventanaPrincipal.getTextLugar());
+                         break;
+                 case 3: 
+                     
+                     break;
+                     
+                 case 4:
+                     break;
+             }//Fin switch
              
         System.out.println("Click en Agregar");
        }//if
