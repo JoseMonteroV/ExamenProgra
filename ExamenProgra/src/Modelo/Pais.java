@@ -9,6 +9,6 @@ package Modelo;
  *
  * @author Jose Montero
  */
-public class Personas {
+public class Pais {
     
 }
