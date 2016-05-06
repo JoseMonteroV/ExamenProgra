@@ -213,7 +213,7 @@ public class Ventana_Princ extends javax.swing.JFrame {
         });
     }
     
-   // SET y GET
+   // **SET**  //
             
     public void setTextLugarProcedencia(String lugarProcedencia){
     this.txt_Procedencia.setText(lugarProcedencia);
@@ -226,9 +226,14 @@ public class Ventana_Princ extends javax.swing.JFrame {
        public void setTextPaisActualo(String paisActual){
     this.txt_pais_actual.setText(paisActual);
     } 
-     
+       
+     // **GET** //
+       public String getTextLugar(){
+         return this.txt_Procedencia.getText();
+       }
+       
        public String getTextId(){
-       return this.txt_id.getText();
+         return this.txt_id.getText();
        }
     
     

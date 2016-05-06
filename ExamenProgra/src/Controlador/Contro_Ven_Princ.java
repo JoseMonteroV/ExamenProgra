@@ -8,6 +8,8 @@ package Controlador;
 import Modelo.Array_Paises;
 import Modelo.Array_Persona;
 import Modelo.Ciudadano;
+import Modelo.Indigenas;
+import Modelo.Migrantes;
 import Modelo.Pais;
 import Modelo.Persona;
 import Vista.Ventana_Princ;
@@ -24,7 +26,9 @@ public class Contro_Ven_Princ implements ActionListener {
     
     Ventana_Princ ventanaPrincipal;
     Persona persona;
-    
+    Ciudadano ciudadano;
+    Indigenas indigenas;
+    Migrantes migrantes;
     Pais pais;
     Array_Paises listaPaises;
     Array_Persona listaPersona;
@@ -39,15 +43,15 @@ public class Contro_Ven_Princ implements ActionListener {
     public void actionPerformed(ActionEvent e) {
        if(e.getActionCommand().equals("Agregar")){
        
-             ciudadano = new Ciudadano(ciudadano.setId(ventanaPrincipal.getTextId()),"");
+             ciudadano = new Ciudadano(ventanaPrincipal.getTextId(), ventanaPrincipal.getTextLugar());
              
-           int opcion = 0;
-             switch(opcion){
-             
-                 case 1:
-                         break;
-             
-             }
+//           int opcion = 0;
+//             switch(opcion){
+//             
+//                 case 1:
+//                         break;
+//             
+//             }
              
         System.out.println("Click en Agregar");
        }//if
