@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import Controlador.Contro_Ven_Princ;
+
 /**
  *
  * @author Jose Montero
@@ -14,8 +16,11 @@ public class Ventana_Princ extends javax.swing.JFrame {
     /**
      * Creates new form Ventana_Princ
      */
+    Contro_Ven_Princ cvp;
+    
     public Ventana_Princ() {
         initComponents();
+        cvp = new Contro_Ven_Princ(this);
         
         grupo_botones.add(rbCiudadano);
         grupo_botones.add(rbIndigena);
