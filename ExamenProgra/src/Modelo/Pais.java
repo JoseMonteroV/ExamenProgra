@@ -11,4 +11,30 @@ package Modelo;
  */
 public class Pais {
     int capacidadPersonas, solicitudesRefugio;
-}
+    String nombre;
+
+    public int getCapacidadPersonas() {
+        return capacidadPersonas;
+    }
+
+    public void setCapacidadPersonas(int capacidadPersonas) {
+        this.capacidadPersonas = capacidadPersonas;
+    }
+
+    public int getSolicitudesRefugio() {
+        return solicitudesRefugio;
+    }
+
+    public void setSolicitudesRefugio(int solicitudesRefugio) {
+        this.solicitudesRefugio = solicitudesRefugio;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+}//
