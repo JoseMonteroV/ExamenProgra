@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Jose Montero
  */
-public class Array_Paises {j
+public class Array_Paises {
     private ArrayList <Pais> arrayPais;
     int pos;
 
