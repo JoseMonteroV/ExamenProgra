@@ -5,10 +5,23 @@
  */
 package Controlador;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author Jose Montero
  */
-public class Contro_Ven_Princ {
+public class Contro_Ven_Princ implements ActionListener {
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+       if(e.getActionCommand().equals(e)){
+       
+       
+       }//Fin if
+    }
     
 }
