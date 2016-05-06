@@ -43,9 +43,7 @@ public class Ventana_Princ extends javax.swing.JFrame {
         grupo_botones = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jbAgregar = new javax.swing.JButton();
-        txt_Nombre = new javax.swing.JTextField();
         rbCiudadano = new javax.swing.JRadioButton();
         rbIndigena = new javax.swing.JRadioButton();
         rbMigrante = new javax.swing.JRadioButton();
@@ -64,8 +62,6 @@ public class Ventana_Princ extends javax.swing.JFrame {
         jLabel1.setText("Pais de nacimiento");
 
         jLabel2.setText("Pais Actual");
-
-        jLabel3.setText("Nombre");
 
         jbAgregar.setText("Agregar");
 
@@ -100,10 +96,6 @@ public class Ventana_Princ extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txt_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -152,11 +144,7 @@ public class Ventana_Princ extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(rbIndigena))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(txt_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                        .addGap(49, 49, 49)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
                             .addComponent(txt_Procedencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -238,7 +226,6 @@ public class Ventana_Princ extends javax.swing.JFrame {
     private javax.swing.ButtonGroup grupo_botones;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -247,7 +234,6 @@ public class Ventana_Princ extends javax.swing.JFrame {
     private javax.swing.JRadioButton rbIndigena;
     private javax.swing.JRadioButton rbMigrante;
     private javax.swing.JRadioButton rbRefugiado;
-    private javax.swing.JTextField txt_Nombre;
     private javax.swing.JTextField txt_Procedencia;
     private javax.swing.JTextField txt_migracion;
     private javax.swing.JTextField txt_pais_actual;
