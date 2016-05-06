@@ -6,6 +6,8 @@
 package Vista;
 
 import Controlador.Contro_Ven_Princ;
+import Modelo.Array_Paises;
+import Modelo.Array_Persona;
 
 /**
  *
@@ -17,10 +19,13 @@ public class Ventana_Princ extends javax.swing.JFrame {
      * Creates new form Ventana_Princ
      */
     Contro_Ven_Princ cvp;
-    
+    Array_Paises listaPaises;
+     Array_Persona listaPersona;
+     
+     
     public Ventana_Princ() {
         initComponents();
-        cvp = new Contro_Ven_Princ(this);
+        cvp = new Contro_Ven_Princ(this, listaPaises, listaPersona );
         this.jbAgregar.addActionListener(cvp);
                 
         grupo_botones.add(rbCiudadano);
@@ -50,10 +55,8 @@ public class Ventana_Princ extends javax.swing.JFrame {
         rbRefugiado = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         txt_Procedencia = new javax.swing.JTextField();
-        txt_migracion = new javax.swing.JTextField();
-        txt_refugiado = new javax.swing.JTextField();
+        txt_id = new javax.swing.JTextField();
         txt_pais_nacimiento = new javax.swing.JTextField();
         txt_pais_actual = new javax.swing.JTextField();
 
@@ -85,9 +88,8 @@ public class Ventana_Princ extends javax.swing.JFrame {
 
         jLabel4.setText("Lugar de Procedencia");
 
-        jLabel5.setText("Carnet migracion");
-
-        jLabel6.setText("Carnet de Refugiado");
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel5.setText("ID");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -97,17 +99,14 @@ public class Ventana_Princ extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txt_refugiado))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(32, 32, 32)
-                        .addComponent(txt_migracion))
-                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txt_Procedencia, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txt_Procedencia, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(56, 56, 56)
+                        .addComponent(txt_id)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(rbRefugiado)
@@ -151,19 +150,11 @@ public class Ventana_Princ extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(rbMigrante)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel5)
-                        .addComponent(txt_migracion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(txt_refugiado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbRefugiado)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txt_id, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(rbRefugiado)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
@@ -221,23 +212,42 @@ public class Ventana_Princ extends javax.swing.JFrame {
             }
         });
     }
-
+    
+   // SET y GET
+            
+    public void setTextLugarProcedencia(String lugarProcedencia){
+    this.txt_Procedencia.setText(lugarProcedencia);
+    }
+    
+     public void setTextId(String idMIgracion){
+    this.txt_id.setText(idMIgracion);
+    }
+      
+       public void setTextPaisActualo(String paisActual){
+    this.txt_pais_actual.setText(paisActual);
+    } 
+     
+       public String getTextId(){
+       return this.txt_id.getText();
+       }
+    
+    
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup grupo_botones;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JButton jbAgregar;
     private javax.swing.JRadioButton rbCiudadano;
     private javax.swing.JRadioButton rbIndigena;
     private javax.swing.JRadioButton rbMigrante;
     private javax.swing.JRadioButton rbRefugiado;
     private javax.swing.JTextField txt_Procedencia;
-    private javax.swing.JTextField txt_migracion;
+    private javax.swing.JTextField txt_id;
     private javax.swing.JTextField txt_pais_actual;
     private javax.swing.JTextField txt_pais_nacimiento;
-    private javax.swing.JTextField txt_refugiado;
     // End of variables declaration//GEN-END:variables
 }
