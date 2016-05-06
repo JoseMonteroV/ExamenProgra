@@ -11,4 +11,38 @@ package Modelo;
  */
 public class Persona {
     
+    String id, lugarProcedencia;
+
+    
+//    public Persona(){
+//    
+//    }
+    
+    public Persona(String id, String lugarProcedencia) {
+        this.id = id;
+        this.lugarProcedencia = lugarProcedencia;
+    }//
+    
+    
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getLugarProcedencia() {
+        return lugarProcedencia;
+    }
+
+    public void setLugarProcedencia(String lugarProcedencia) {
+        this.lugarProcedencia = lugarProcedencia;
+    }
+    
+    
+    
+   
+    
 }

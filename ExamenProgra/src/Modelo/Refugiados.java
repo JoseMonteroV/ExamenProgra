@@ -7,8 +7,12 @@ package Modelo;
 
 /**
  *
- * @author Jose Montero
+ * @author User
  */
-public class Pais {
-    int capacidadPersonas, solicitudesRefugio;
+public class Refugiados extends Persona {
+    diasPermanecia = 30;
+    public Refugiados(String id, String lugarProcedencia) {
+        super(id, lugarProcedencia);
+    }
+    
 }
