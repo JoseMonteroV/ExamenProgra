@@ -21,7 +21,8 @@ public class Ventana_Princ extends javax.swing.JFrame {
     public Ventana_Princ() {
         initComponents();
         cvp = new Contro_Ven_Princ(this);
-        
+        this.jbAgregar.addActionListener(cvp);
+                
         grupo_botones.add(rbCiudadano);
         grupo_botones.add(rbIndigena);
         grupo_botones.add(rbMigrante);
