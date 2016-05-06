@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author luisza
+ * @author Jose Montero
  */
 public class LectorXML {
 

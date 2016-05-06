@@ -14,7 +14,7 @@ import java.util.HashMap;
 
 /**
  *
- * @author luisza
+ * @author Jose Montero
  */
 public class Inspector {
     

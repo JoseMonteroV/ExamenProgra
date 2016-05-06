@@ -7,7 +7,7 @@ package Modelo;
 
 /**
  *
- * @author luisza
+ * @author Jose Montero
  */
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
