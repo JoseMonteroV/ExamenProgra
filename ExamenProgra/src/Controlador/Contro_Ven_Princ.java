@@ -21,8 +21,8 @@ public class Contro_Ven_Princ implements ActionListener {
     
     public Contro_Ven_Princ(Ventana_Princ ventanaPrincipal){
         this.ventanaPrincipal = ventanaPrincipal;
-    
     }
+    
     @Override
     public void actionPerformed(ActionEvent e) {
        if(e.getActionCommand().equals(e)){
