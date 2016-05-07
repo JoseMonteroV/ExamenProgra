@@ -19,6 +19,7 @@ public class Ventana_Pais extends javax.swing.JFrame {
     Array_Paises listaPaises;
     Array_Persona listaPersona;
     
+    
     public Ventana_Pais() {
         initComponents();
         controlVenPais = new Controlador_Ven_Pais(this, listaPaises, listaPersona);

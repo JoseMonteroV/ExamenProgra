@@ -31,11 +31,15 @@ public class Ventana_Persona extends javax.swing.JFrame {
         initComponents();
         cvp = new Controlador_Ven_Persona(this, listaPaises, listaPersona );
         this.jbAgregar.addActionListener(cvp);
-                
+        
         grupo_botones.add(rbCiudadano);
         grupo_botones.add(rbIndigena);
         grupo_botones.add(rbMigrante);
         grupo_botones.add(rbRefugiado);
+    }
+
+    public Ventana_Persona(Ventana_Persona ventanaPersona, Array_Paises listaPaises, Array_Persona listaPersona) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -62,7 +66,6 @@ public class Ventana_Persona extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         cbOrigen = new javax.swing.JComboBox<>();
         cbProcedencia = new javax.swing.JComboBox<>();
-        cbNacimiento = new javax.swing.JComboBox<>();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         zonaIndigena = new javax.swing.JComboBox<>();
@@ -207,14 +210,7 @@ public class Ventana_Persona extends javax.swing.JFrame {
    
     
    // **SET**  //
-            
-//    public void setTextLugarProcedencia(String lugarProcedencia){
-//    this.txt_Procedencia.setText(lugarProcedencia);
-//    }
-    
-//     public void setTextId(String idMIgracion){
-//    this.txt_id.setText(idMIgracion);
-//    }
+           
       
 //       public void setTextPaisActualo(String paisActual){
 //    this.txt_pais_actual.setText(paisActual);
@@ -225,9 +221,6 @@ public class Ventana_Persona extends javax.swing.JFrame {
 //         return this.txt_Procedencia.getText();
 //       }
        
-//       public String getTextId(){
-//         return this.txt_id.getText();
-//       }
     
     //GET Radio Button
     public int getRadioButton(){
@@ -253,7 +246,7 @@ public class Ventana_Persona extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.JComboBox<String> cbNacimiento;
+    public static final javax.swing.JComboBox<String> cbNacimiento = new javax.swing.JComboBox<>();
     private javax.swing.JComboBox<String> cbOrigen;
     private javax.swing.JComboBox<String> cbProcedencia;
     private javax.swing.ButtonGroup grupo_botones;

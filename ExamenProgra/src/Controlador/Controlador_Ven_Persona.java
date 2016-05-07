@@ -13,6 +13,7 @@ import Modelo.Migrantes;
 import Modelo.Pais;
 import Modelo.Persona;
 import Vista.Ventana_Persona;
+import static Vista.Ventana_Persona.cbNacimiento;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionListener;
@@ -24,7 +25,7 @@ import java.awt.event.ActionListener;
 public class Controlador_Ven_Persona implements ActionListener {
 
     
-    Ventana_Persona ventanaPrincipal;
+    Ventana_Persona ventanaPersona;
     Persona persona;
     Ciudadano ciudadano;
     Indigenas indigenas;
@@ -34,7 +35,7 @@ public class Controlador_Ven_Persona implements ActionListener {
     Array_Persona listaPersona;
    
     public Controlador_Ven_Persona(Ventana_Persona ventanaPrincipal, Array_Paises listaPaises, Array_Persona listaPersona){
-        this.ventanaPrincipal = ventanaPrincipal;
+        this.ventanaPersona = ventanaPrincipal;
 
         this.listaPaises = listaPaises;
         this.listaPersona = listaPersona;
@@ -46,10 +47,11 @@ public class Controlador_Ven_Persona implements ActionListener {
     public void actionPerformed(ActionEvent e) {
        if(e.getActionCommand().equals("Agregar")){
        
-             switch(ventanaPrincipal.getRadioButton()){
+             switch(ventanaPersona.getRadioButton()){
              
                  case 1:
                      // ciudadano = new Ciudadano(ventanaPrincipal.getTextId(), ventanaPrincipal.getTextLugar());
+                     cbNacimiento.setSelectedItem("Cr");
                          break;
                  case 2:
                      // indigenas = new Indigenas(ventanaPrincipal.getTextId(),ventanaPrincipal.getTextLugar());
@@ -64,7 +66,8 @@ public class Controlador_Ven_Persona implements ActionListener {
              }//Fin switch
              
         System.out.println("Click en Agregar");
-       }//if
+        
+       }//if Action
          
        
        }//Fin Action

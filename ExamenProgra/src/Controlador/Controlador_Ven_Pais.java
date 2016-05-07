@@ -8,6 +8,7 @@ package Controlador;
 import Modelo.Array_Paises;
 import Modelo.Array_Persona;
 import Vista.Ventana_Pais;
+import Vista.Ventana_Persona;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -18,13 +19,14 @@ import java.awt.event.ActionListener;
 public class Controlador_Ven_Pais implements ActionListener {
 
         Ventana_Pais ventanaPais;
+        Ventana_Persona ventanaPersona;
         Array_Paises listaPaises;
-        Array_Persona lisArrayPersona;
+        Array_Persona listaPersona;
         
     public Controlador_Ven_Pais(Ventana_Pais ventana_Pais, Array_Paises listaPaises, Array_Persona lisArrayPersona){
         this.ventanaPais = ventana_Pais;
         this.listaPaises = listaPaises;
-        this.lisArrayPersona = lisArrayPersona;
+        this.listaPersona = lisArrayPersona;
     }
     
     
@@ -33,6 +35,8 @@ public class Controlador_Ven_Pais implements ActionListener {
         
         if(e.getActionCommand().equals("Agregar")){
             System.out.println("Controlador Pais");
+            
+            
         }//Fin if
     }
     
