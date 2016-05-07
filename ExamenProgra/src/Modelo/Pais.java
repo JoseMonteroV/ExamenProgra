@@ -12,6 +12,7 @@ package Modelo;
 public class Pais {
     @Anotacion
     int capacidadPersonas, solicitudesRefugio;
+    String codigo;
     @Anotacion
     String nombre;
      @Anotacion(guardar_xml = false)
