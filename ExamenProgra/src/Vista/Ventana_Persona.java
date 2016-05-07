@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Vista;
-import Controlador.Control_Ven_Princ;
+import Controlador.Controlador_Ven_Persona;
 import Controlador.CreadorArchivo;
 import java.util.ArrayList;
 import Modelo.Anotacion;
@@ -21,7 +21,7 @@ public class Ventana_Persona extends javax.swing.JFrame {
     /**
      * Creates new form Ventana_Princ
      */
-    Control_Ven_Princ cvp;
+    Controlador_Ven_Persona cvp;
     Array_Paises listaPaises;
     Array_Persona listaPersona;
     int opcion;
@@ -29,7 +29,7 @@ public class Ventana_Persona extends javax.swing.JFrame {
      
     public Ventana_Persona() {
         initComponents();
-        cvp = new Control_Ven_Princ(this, listaPaises, listaPersona );
+        cvp = new Controlador_Ven_Persona(this, listaPaises, listaPersona );
         this.jbAgregar.addActionListener(cvp);
                 
         grupo_botones.add(rbCiudadano);

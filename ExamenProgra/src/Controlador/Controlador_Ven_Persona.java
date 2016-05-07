@@ -21,7 +21,7 @@ import java.awt.event.ActionListener;
  *
  * @author Jose Montero
  */
-public class Control_Ven_Princ implements ActionListener {
+public class Controlador_Ven_Persona implements ActionListener {
 
     
     Ventana_Persona ventanaPrincipal;
@@ -33,7 +33,7 @@ public class Control_Ven_Princ implements ActionListener {
     Array_Paises listaPaises;
     Array_Persona listaPersona;
    
-    public Control_Ven_Princ(Ventana_Persona ventanaPrincipal, Array_Paises listaPaises, Array_Persona listaPersona){
+    public Controlador_Ven_Persona(Ventana_Persona ventanaPrincipal, Array_Paises listaPaises, Array_Persona listaPersona){
         this.ventanaPrincipal = ventanaPrincipal;
 
         this.listaPaises = listaPaises;

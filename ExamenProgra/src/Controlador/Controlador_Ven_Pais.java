@@ -9,6 +9,6 @@ package Controlador;
  *
  * @author Jose Montero
  */
-public class Contro_Ven_Secun {
+public class Controlador_Ven_Pais {
     
 }
