@@ -35,7 +35,7 @@ public class Controlador_Ven_Pais implements ActionListener {
         
         if(e.getActionCommand().equals("Agregar")){
             System.out.println("Controlador Pais");
-            
+            ventanaPersona.setItemNacimiento();
             
         }//Fin if
     }

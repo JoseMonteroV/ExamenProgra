@@ -213,23 +213,23 @@ public class Ventana_Pais extends javax.swing.JFrame {
      
      //GET
      
-           public String getId(){
+           public String getTxtId(){
          return this.txtCodigo.getText();
        }
            
-           public String getCodigo(){
+           public String getTxtCodigo(){
              return this.txtCodigo.getText();
           }
            
-           public String getNacimiento(){
+           public String getTxtNacimiento(){
               return this.txtNacimiento.getText();
             }
              
-            public String getProcedencia(){
+            public String getTxtProcedencia(){
               return this.txtProcedencia.getText();
             }
             
-             public String getOrigen(){
+             public String getTxtOrigen(){
               return this.txtOrigen.getText();
             }
            
