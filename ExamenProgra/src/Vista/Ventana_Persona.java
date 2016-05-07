@@ -29,7 +29,7 @@ public class Ventana_Persona extends javax.swing.JFrame {
      
     public Ventana_Persona() {
         initComponents();
-        cvp = new Controlador_Ven_Persona(this, listaPaises, listaPersona );
+        cvp = new Controlador_Ven_Persona(this, listaPaises, listaPersona);
         this.jbAgregar.addActionListener(cvp);
         
         grupo_botones.add(rbCiudadano);
@@ -240,6 +240,12 @@ public class Ventana_Persona extends javax.swing.JFrame {
             } 
             
         return opcion;
+    }
+    
+    
+    public void setItemNacimiento(String pais){
+        
+        cbNacimiento.addItem(pais);
     }
    
     
