@@ -24,6 +24,7 @@ public class Ventana_Persona extends javax.swing.JFrame {
     Controlador_Ven_Persona cvp;
     Array_Paises listaPaises;
     Array_Persona listaPersona;
+    Ventana_Pais ventanaPais;
     int opcion;
      
      
@@ -243,8 +244,8 @@ public class Ventana_Persona extends javax.swing.JFrame {
     }
     
     
-    public void setItemNacimiento(String pais){
-        
+    public void setItemNacimiento(){
+       String pais = ventanaPais.getTxtNacimiento();
         cbNacimiento.addItem(pais);
     }
    
