@@ -12,7 +12,7 @@ import Modelo.Indigenas;
 import Modelo.Migrantes;
 import Modelo.Pais;
 import Modelo.Persona;
-import Vista.Ventana_Princ;
+import Vista.Ventana_Persona;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionListener;
@@ -21,10 +21,10 @@ import java.awt.event.ActionListener;
  *
  * @author Jose Montero
  */
-public class Contro_Ven_Princ implements ActionListener {
+public class Control_Ven_Princ implements ActionListener {
 
     
-    Ventana_Princ ventanaPrincipal;
+    Ventana_Persona ventanaPrincipal;
     Persona persona;
     Ciudadano ciudadano;
     Indigenas indigenas;
@@ -33,7 +33,7 @@ public class Contro_Ven_Princ implements ActionListener {
     Array_Paises listaPaises;
     Array_Persona listaPersona;
    
-    public Contro_Ven_Princ(Ventana_Princ ventanaPrincipal, Array_Paises listaPaises, Array_Persona listaPersona){
+    public Control_Ven_Princ(Ventana_Persona ventanaPrincipal, Array_Paises listaPaises, Array_Persona listaPersona){
         this.ventanaPrincipal = ventanaPrincipal;
 
         this.listaPaises = listaPaises;
@@ -49,13 +49,14 @@ public class Contro_Ven_Princ implements ActionListener {
              switch(ventanaPrincipal.getRadioButton()){
              
                  case 1:
-                      ciudadano = new Ciudadano(ventanaPrincipal.getTextId(), ventanaPrincipal.getTextLugar());
+                     // ciudadano = new Ciudadano(ventanaPrincipal.getTextId(), ventanaPrincipal.getTextLugar());
                          break;
                  case 2:
-                      indigenas = new Indigenas(ventanaPrincipal.getTextId(),ventanaPrincipal.getTextLugar());
+                     // indigenas = new Indigenas(ventanaPrincipal.getTextId(),ventanaPrincipal.getTextLugar());
+                      System.out.print("Agregado correctamente, indigena");
                          break;
                  case 3: 
-                     
+                      //migrantes = new Migrantes(ventanaPrincipal, , );
                      break;
                      
                  case 4:
