@@ -6,6 +6,7 @@
 package Controlador;
 
 import Modelo.Array_Paises;
+import Modelo.Plantilla;
 import Modelo.Array_Persona;
 import Modelo.Ciudadano;
 import Modelo.Indigenas;
@@ -17,6 +18,7 @@ import static Vista.Ventana_Persona.cbNacimiento;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionListener;
+import Modelo.FactoryMethod;
 
 /**
  *
@@ -33,13 +35,15 @@ public class Controlador_Ven_Persona implements ActionListener {
     Pais pais;
     Array_Paises listaPaises;
     Array_Persona listaPersona;
+    Plantilla<Persona> perso;
+    FactoryMethod factoryMethod;
    
     public Controlador_Ven_Persona(Ventana_Persona ventanaPrincipal, Array_Paises listaPaises, Array_Persona listaPersona){
         this.ventanaPersona = ventanaPrincipal;
 
         this.listaPaises = listaPaises;
         this.listaPersona = listaPersona;
-    
+        perso = new Plantilla<>();
 
     }
     
@@ -52,6 +56,7 @@ public class Controlador_Ven_Persona implements ActionListener {
                  case 1:
                      // ciudadano = new Ciudadano(ventanaPrincipal.getTextId(), ventanaPrincipal.getTextLugar());
                      cbNacimiento.setSelectedItem("Cr");
+                     
                          break;
                  case 2:
                      // indigenas = new Indigenas(ventanaPrincipal.getTextId(),ventanaPrincipal.getTextLugar());
